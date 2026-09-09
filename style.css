@@ -175,39 +175,47 @@
     }
 
 }
-/* Desktop */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 
-/* Tablet */
 @media (max-width: 768px) {
 
-    .container {
-        width: 92%;
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 90%;
+        margin: auto;
     }
 
-    .footer-box {
-        flex-direction: column;
+    .product-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
 }
+@media (max-width: 768px) {
 
-/* Mobile */
-@media (max-width: 480px) {
-
-    .container {
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
         width: 94%;
+        margin: auto;
     }
 
-    h1 {
-        font-size: 32px;
+    .product-card {
+        width: 100%;
     }
 
-    img {
-        max-width: 100%;
-    }
 }
 
 
