@@ -175,5 +175,39 @@
     }
 
 }
+/* Desktop */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .footer-box {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .container {
+        width: 94%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
 
 
